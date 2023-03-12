@@ -18,7 +18,10 @@ h1 {
 .box {
     max-width: 1000px;
     margin: 20px auto;
+   
 }
+
+
 
 .box-title {
     display: block;
@@ -42,9 +45,16 @@ h1 {
     
 
 }
-/* .box-title:hover {
-    background-color: blueviolet;
-} */
+
+/* .box-input:hover ~ .box-image {
+    
+    max-width: fit-content;
+    display: block;
+    transition: .5s;
+    position: relative;
+}
+     */
+
 
 .box-input {
     width: 0;
@@ -57,8 +67,10 @@ h1 {
 
 .box-input:checked ~ .box-image {
     display: block;
+    transition: .5s;
     
 }
+
 
 .box-input:checked ~ .box-title {
     color: black;
@@ -70,6 +82,10 @@ h1 {
 .box-image {
     display: none;
     text-align: center;
+    cursor: pointer;
+    
+   
+   
 }
 
 
